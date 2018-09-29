@@ -16,9 +16,12 @@ class Patient
   def self.all
     @@all
   end
+  
+  def appointments 
+    Appointment.all.select
 
   def doctors
-    self.appointments.select do |appointment|
+    self.appointments.collect do |appointment|
       appointment.doctor
     end
   end
