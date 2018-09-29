@@ -18,7 +18,7 @@ class Doctor
   end
   
   def appointments
-    self.appointments.select do |appointment|
+    .select do |appointment|
       appointments
     end 
   end 
