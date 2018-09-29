@@ -19,11 +19,11 @@ class Artist
     self.songs << song
   end
 
-  def songs
-    self.songs.select do |song|
-      song.artist 
-    end 
-  end 
+ # def songs
+  #  self.songs.select do |song|
+   #   song.artist 
+   # end 
+  #end 
 
   def genres
     self.songs.collect do |song|
